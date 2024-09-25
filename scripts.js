@@ -237,7 +237,8 @@ function onLoad() {
     canvas = document.getElementById('cv');
     ctx = canvas.getContext('2d');
     reset();
-    document.addEventListener("mousemove", mouseMoveHandler, false);
+    // document.addEventListener("mousemove", mouseMoveHandler, false);
+    document.addEventListener("pointermove", mouseMoveHandler, false);
 }
 
 function onCanvasClick() {
