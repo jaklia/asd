@@ -251,8 +251,8 @@ function onCanvasClick() {
 function mouseMoveHandler(e) {
     var relativeX = e.clientX - canvas.offsetLeft;
     var relativeY = e.clientY - canvas.offsetTop;
-    if (relativeX > 0 && relativeX < canvas.width &&
-        relativeY > 0 && relativeY < canvas.height) {
+    if (relativeX > 0 && relativeX < canvas.width /*&&
+        relativeY > 0 && relativeY < canvas.height*/) {
         // e.movementX  
 
         game.setPaddleX(relativeX);
